@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".greeting.GreetingFragment">
+
+    <ImageView
+        android:id="@+id/photo_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:src="@color/black" />
+
+    <TextView
+        android:id="@+id/firstName_tv"
+        style="@style/SimpleTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="firstName" />
+
+    <TextView
+        android:id="@+id/secondName_tv"
+        style="@style/SimpleTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="secondName" />
+
+    <TextView
+        android:id="@+id/education_tv"
+        style="@style/SimpleTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="education" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/company_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_company" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next screen" />
+
+</LinearLayout>
